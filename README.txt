@@ -43,9 +43,11 @@ en este caso lo llamaremos de nombre Product
 
 	php artisan make:request ProductRequest
 
+7. traducir a diferentes idiomas - configurar idioma español
 
+	Descargar la carpeta "es" copiarla en resource->lang
 
-
+	https://github.com/italomoralesf/Laravel-lang
 
 
 
