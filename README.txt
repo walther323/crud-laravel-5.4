@@ -12,6 +12,11 @@ en este caso lo llamaremos de nombre Product
 
 	php artisan migrate:refresh --seed
 
-4.
+4. definimos las rutas del crud
+
+	 php artisan route:list
+
+
+
 
 
