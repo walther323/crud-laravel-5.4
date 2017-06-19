@@ -16,6 +16,35 @@ en este caso lo llamaremos de nombre Product
 
 	 php artisan route:list
 
+5. procederemos a usar las vistas de crear y editar para eso usaremos el paquete de laravel collective
+
+	composer require "laravelcollective/html":"^5.4.0"
+
+
+	Next, add your new provider to the providers array of config/app.php:
+
+  	'providers' => [
+    		// ...
+    		Collective\Html\HtmlServiceProvider::class,
+    		// ...
+  	],
+
+	Finally, add two class aliases to the aliases array of config/app.php:
+
+  	'aliases' => [
+    		// ...
+      		'Form' => Collective\Html\FormFacade::class,
+      		'Html' => Collective\Html\HtmlFacade::class,
+    		// ...
+  		],
+
+
+6. validaciones en los campos del formulario
+
+	php artisan make:request ProductRequest
+
+
+
 
 
 
